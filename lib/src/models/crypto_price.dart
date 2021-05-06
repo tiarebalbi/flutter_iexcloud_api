@@ -15,8 +15,8 @@ class CryptoPrice {
     if (data == null) return null;
 
     return CryptoPrice(
-      price: data["price"],
-      symbol: data["symbol"],
+      price: data['price'],
+      symbol: data['symbol'],
     );
   }
 }
