@@ -13,6 +13,8 @@ For more details [click here](https://iexcloud.io/)
 
 ## Get started
 
+**API Reference:** https://iexcloud.io/docs/api/#api-reference
+
 ### Add dependency
 
 ```yaml
