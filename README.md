@@ -89,7 +89,7 @@ For more details on how to use Interceptor, please check [dio plugin page](https
 
 ## Copyright & License
 
-This open source project implemented by https://tiarebalbi , and the license is MIT. [Data provided by IEX Cloud](https://iexcloud.io)
+This open source project implemented by [Tiarê Balbi Bonamini](https://tiarebalbi.com) , and the license is MIT. [Data provided by IEX Cloud](https://iexcloud.io)
 
 
 ## Features and bugs
