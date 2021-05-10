@@ -2,6 +2,7 @@
 
 [![Pub](https://img.shields.io/pub/v/flutter_iexcloud_api.svg?style=flat-square)](https://pub.dartlang.org/packages/flutter_iexcloud_api)
 [![support](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/tiarebalbi/flutter_iexcloud_api)
+[![Build Status](https://travis-ci.com/tiarebalbi/flutter_iexcloud_api.svg?branch=main)](https://travis-ci.com/tiarebalbi/flutter_iexcloud_api)
 
 The IEX Cloud API client based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP response codes.
 
