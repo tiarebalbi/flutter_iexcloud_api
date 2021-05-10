@@ -17,3 +17,4 @@ RUN git clone https://github.com/flutter/flutter --branch beta && \
 
 RUN dart pub global activate pana
 RUN dart pub global activate pub_release
+RUN dart pub global activate dartdoc
