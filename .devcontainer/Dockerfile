@@ -14,3 +14,6 @@ ENV PATH="/home/vscodespace/flutter/bin:$PATH"
 
 RUN git clone https://github.com/flutter/flutter --branch beta && \
     /home/vscodespace/flutter/bin/flutter config --enable-web
+
+RUN dart pub global activate pana
+RUN dart pub global activate pub_release

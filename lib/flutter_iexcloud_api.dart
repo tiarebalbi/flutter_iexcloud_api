@@ -1,4 +1,7 @@
 library flutter_iexcloud_api;
 
+/// API Client
 export 'src/iex_client_api.dart';
-export 'src/models/crypto_price.dart';
+
+/// Models
+export 'src/models/models.dart';

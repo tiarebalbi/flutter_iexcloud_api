@@ -8,9 +8,33 @@ The IEX Cloud API client based on REST, has resource-oriented URLs, returns JSON
 **Note:**
 
 * IEX Cloud authenticates your API requests using your account’s API tokens. To use any IEX Cloud API, you must pass an API token with each request. If you do not include your API token when making an API request, or use one that is incorrect or disabled, IEX Cloud returns an error.
-* Work in progress, Only REST Requests are supported.
+* Work in progress, Only **REST** Requests are supported.
 
 For more details [click here](https://iexcloud.io/)
+
+## Road map
+
+API Collection  | Status           | Milestone
+----------------| ---------------- | ----------------
+Status  | :white_check_mark: | 1.0.0
+Symbols  | :white_check_mark: | 1.0.0
+Cryptocurrency  | :white_check_mark: | 1.0.0
+News  | :white_check_mark: | 1.1.0
+Stocks / Equities  | :technologist: | 1.1.0
+Corporate Actions  | :technologist: | 1.2.0
+Market Info  | :technologist: | 1.2.0
+Forex / Currencies | :technologist: | 1.3.0
+Options  | :technologist: | 1.3.0
+Futures  | :technologist: | 1.3.0
+CEO Compensation | :technologist: | 1.3.0
+Treasuries | :technologist: | 1.3.0
+Commodities | :technologist: | 1.4.0
+Economic Data | :technologist: | 1.4.0
+Reference Data | :technologist: | 1.5.0
+Investors Exchange Data | :technologist: | 1.6.0
+Premium Data | :technologist: | 2.0.0
+
+----
 
 ## Get started
 

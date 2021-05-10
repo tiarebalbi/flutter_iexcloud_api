@@ -1,0 +1,7 @@
+{
+	"dart.flutterSdkPath": "~/flutter",
+	"terminal.integrated.tabs.enabled": true,
+	"terminal.integrated.env.linux": {
+		"PATH": "~/flutter/bin/:~/.pub_cache/bin/:${env:PATH}",
+	},
+}
