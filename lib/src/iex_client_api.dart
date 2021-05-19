@@ -2,6 +2,7 @@ library flutter_iexcloud_api;
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_iexcloud_api/src/iex_error_handler.dart';
 
 import 'models/models.dart';
 
@@ -19,12 +20,23 @@ class IEXClientApi {
   /// If you do not include your API token when making an API request,
   /// or use one that is incorrect or disabled, IEX Cloud returns an error.
   final String token;
+
+  /// IEX API Version
   final ApiVersion apiVersion;
+
+  /// IEX Base URL
   final String baseUrl;
+
+  /// Connection Timeout to be used by the API requests
   final int connectTimeout;
+
+  /// Send Timeout to be used by the API requests
   final int sendTimeout;
+
+  /// Receive Timeout to be used by the API requests
   final int receiveTimeout;
 
+  /// DIO Client instance used to send all requests
   late final Dio dio = Dio(BaseOptions(
     baseUrl: '$baseUrl/${describeEnum(apiVersion)}',
     connectTimeout: connectTimeout,
@@ -32,6 +44,7 @@ class IEXClientApi {
     receiveTimeout: receiveTimeout,
   ));
 
+  /// Constructor
   IEXClientApi({
     required this.token,
     this.apiVersion = ApiVersion.stable,
@@ -90,24 +103,24 @@ class IEXClientApi {
     );
   }
 
+  /// Add a new interceptor to be executed against all requests
   void addInterceptor(Interceptor interceptor) {
     dio.interceptors.add(interceptor);
   }
 
+  /// Remove all interceptors
   void clearInterceptors() {
     dio.interceptors.clear();
   }
 
-  void _callErrorHandler(Object e) {
-    // TODO Implement error handling
-  }
-
+  /// Send GET Request
   Future<T?> _get<T>(String path, {required Function callback}) async {
     try {
       final response = await dio.get<Map<String, dynamic>?>(path);
       return callback(response.data);
     } on DioError catch (e) {
-      _callErrorHandler(e);
+      final errorMessage = IEXErrorHandler.from(e);
+      throw Exception(errorMessage);
     }
   }
 }

@@ -6,11 +6,13 @@ class CryptoPrice {
   /// The symbol of the cryptocurrency
   final String symbol;
 
+  /// Default Constructor
   CryptoPrice({
     required this.price,
     required this.symbol,
   });
 
+  /// Convert JSON to CryptoPrice
   static CryptoPrice? parse(Map<String, dynamic>? data) {
     if (data == null) return null;
 
