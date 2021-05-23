@@ -17,23 +17,23 @@ For more details [click here](https://iexcloud.io/)
 
 API Collection  | Status           | Milestone
 ----------------| ---------------- | ----------------
-Status  | :white_check_mark: | 1.0.0
-Symbols  | :white_check_mark: | 1.0.0
-Cryptocurrency  | :white_check_mark: | 1.0.0
-News  | :white_check_mark: | 1.1.0
-Stocks / Equities  | :technologist: | 1.1.0
-Corporate Actions  | :technologist: | 1.2.0
-Market Info  | :technologist: | 1.2.0
-Forex / Currencies | :technologist: | 1.3.0
-Options  | :technologist: | 1.3.0
-Futures  | :technologist: | 1.3.0
-CEO Compensation | :technologist: | 1.3.0
-Treasuries | :technologist: | 1.3.0
-Commodities | :technologist: | 1.4.0
-Economic Data | :technologist: | 1.4.0
-Reference Data | :technologist: | 1.5.0
-Investors Exchange Data | :technologist: | 1.6.0
-Premium Data | :technologist: | 2.0.0
+Status  | :white_check_mark: | 1.0.x
+Symbols  | :white_check_mark: | 1.0.x
+Cryptocurrency  | :white_check_mark: | 1.0.x
+News  | :white_check_mark: | 1.1.x
+Stocks / Equities  | :technologist: | 1.1.x
+Corporate Actions  | :technologist: | 1.2.x
+Market Info  | :technologist: | 1.2.x
+Forex / Currencies | :technologist: | 1.3.x
+Options  | :technologist: | 1.3.x
+Futures  | :technologist: | 1.3.x
+CEO Compensation | :technologist: | 1.3.x
+Treasuries | :technologist: | 1.3.x
+Commodities | :technologist: | 1.4.x
+Economic Data | :technologist: | 1.4.x
+Reference Data | :technologist: | 1.5.x
+Investors Exchange Data | :technologist: | 1.6.x
+Premium Data | :technologist: | 2.0.x
 
 ----
 
