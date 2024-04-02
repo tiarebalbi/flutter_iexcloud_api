@@ -1,7 +1,6 @@
 library flutter_iexcloud_api;
 
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_iexcloud_api/src/iex_error_handler.dart';
 
 import 'models/models.dart';
@@ -39,9 +38,9 @@ class IEXClientApi {
   /// DIO Client instance used to send all requests
   late final Dio dio = Dio(BaseOptions(
     baseUrl: '$baseUrl/${apiVersion.name}',
-    connectTimeout: connectTimeout,
-    sendTimeout: sendTimeout,
-    receiveTimeout: receiveTimeout,
+    connectTimeout: Duration(milliseconds: connectTimeout),
+    sendTimeout: Duration(milliseconds: sendTimeout),
+    receiveTimeout: Duration(milliseconds: receiveTimeout),
   ));
 
   /// Constructor
@@ -118,7 +117,7 @@ class IEXClientApi {
     try {
       final response = await dio.get<Map<String, dynamic>?>(path);
       return callback(response.data);
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       final errorMessage = IEXErrorHandler.from(e);
       throw Exception(errorMessage);
     }

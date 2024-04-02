@@ -1,16 +1,14 @@
 import 'package:dio/dio.dart';
 
 class IEXErrorHandler {
-  static String from(DioError error) {
+  static String from(DioException error) {
     switch (error.type) {
-      case DioErrorType.sendTimeout:
-      case DioErrorType.connectTimeout:
-      case DioErrorType.receiveTimeout:
+      case DioExceptionType.sendTimeout:
+      case DioExceptionType.connectionTimeout:
+      case DioExceptionType.receiveTimeout:
         return 'Error to connect with the server, check your connection';
-      case DioErrorType.cancel:
+      case DioExceptionType.cancel:
         return 'Request Cancelled';
-      case DioErrorType.response:
-      case DioErrorType.other:
       default:
         break;
     }
