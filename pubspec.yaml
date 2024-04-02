@@ -1,6 +1,6 @@
 name: flutter_iexcloud_api
 description: Flutter API Client to retrieve financial data using IEX Cloud data provider.
-version: 1.0.1
+version: 1.0.2
 author: tiarebalbi.com
 homepage: https://github.com/tiarebalbi/flutter_iexcloud_api
 issue_tracker: https://github.com/tiarebalbi/flutter_iexcloud_api/issues
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio: ">=4.0.0 <6.0.0"
+  dio: ">=5.0.0 <6.0.0"
 
 dev_dependencies:
   test: ^1.16.0

@@ -38,7 +38,7 @@ class IEXClientApi {
 
   /// DIO Client instance used to send all requests
   late final Dio dio = Dio(BaseOptions(
-    baseUrl: '$baseUrl/${describeEnum(apiVersion)}',
+    baseUrl: '$baseUrl/${apiVersion.name}',
     connectTimeout: connectTimeout,
     sendTimeout: sendTimeout,
     receiveTimeout: receiveTimeout,

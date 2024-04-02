@@ -45,7 +45,7 @@ Premium Data | :technologist: | 2.0.x
 
 ```yaml
 dependencies:
-  flutter_iexcloud_api: ^1.0.0
+  flutter_iexcloud_api: ^1.0.02
 ```
 
 ### Super simple to use
