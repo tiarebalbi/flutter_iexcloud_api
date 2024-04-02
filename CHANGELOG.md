@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.2] - 2024-04-02
+
+* Libraries version bump and API fixes
+
 ## [1.0.1] - 2021-05-19
 
 * Fixed default DIO error handling
